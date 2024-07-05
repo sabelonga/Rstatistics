@@ -1,0 +1,107 @@
+---
+title: "CursoR dia Mikel"
+author: "Sabela Cavielles"
+date: "2024-07-05"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+#Dia 1. esta linea de codigo sive par ainstalar los paquetes
+
+```{r setup, include=FALSE}
+install.packages("ggplot2")
+
+library(ggplot2)
+library(dplyr)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Ahora se hacen operaciones básicas
+
+```{r setup, include=FALSE}
+
+3+5-1
+3*5
+5/2
+5<3
+5>3
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+#Ahora hacemos asignaciones que se usan para dar un valor al resultado de una operacion en el la derecha. Crea un objeto/variable. (b -> 2 no se usa ya), en vez de = mejor <-
+
+```{r setup, include=FALSE}
+a = 1
+c <- 3
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Ahora hacemos variables numericas aka vectores. Hay numericas y de carcateres. NO MEZCLAR. cuando le das a run aparecen en el cuadradito de la derecha como un valor o algo asi. Para saver que tipo de variable es usas class (c) y te dice que valor tiene c, si es numerico o de caracter. Para nombre pones "nombre <-"
+```{r setup, include=FALSE}
+c <- 25
+class (c)
+d <- 120
+class (d)
+nombre <- "Hector"
+class ("Hector")
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+#Ahora para signar un valor a una variable
+```{r setup, include=FALSE}
+gato1 <- "Xoana"
+gato2 <- "Anubis"
+gato3 <- "Purrus"
+
+class (gato3)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+#Los vectores son espacios de almacenamiento que se usan para guardar informacion y permite almacenar objetos.Hay numericos, de caracteres y logicos. 
+#La variable es un contenedor para almacenar datos. En ellos se pueden almacenar vectores
+
+```{r setup, include=FALSE}
+
+score <- c(7.5,5,8.7)
+amigos <- c("Emma", "Elisa", "Jose", "Olga")
+amigos #Si ejecutas asi la variable te dice los nombres
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Para saber cuantos elementos tiene un vector se usa "length"
+```{r setup, include=FALSE}
+
+length(amigos)
+
+```
+#Para crear una secuencia rápida
+```{r setup, include=FALSE}
+
+seq(1,50)
+
+```
+
+## Ahora vamos a unir datos entre vectores, el primero el de amigos y luego creamos otro con las edades
+
+
+```{r pressure, echo=FALSE}
+
+amigos <- c("Emma", "Elisa", "Jose", "Olga")
+amigos
+
+edades <- c(19,20,19,15)
+edades
+
+names(edades) <- c("Emma", "Elisa", "Jose", "Olga")
+
+edades
+
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
